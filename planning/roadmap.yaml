@@ -1,5 +1,5 @@
-# Education Framework engineering ledger. Schema: studio repository-roadmap v1 (~/Stuff/.portfolio/templates/repository-roadmap.yaml). Created 2026-10-09 by the studio lane (GOV-S2.3d).
-# Mode: VALIDATE (plan 2026-10-08 section F3; mode lives on the project card, not here).
+# Education Framework engineering ledger, in the studio roadmap schema (v1). Created 2026-10-09 by the studio lane.
+# Mode: VALIDATE (mode lives on the project card, not here).
 # Boundary: public repository for the reference curriculum, its documentation and static site only.
 # Application work lives in a separate repository with its own ledger.
 schema_version: 1
@@ -32,13 +32,13 @@ work_packages:
         acceptance:
           - The commit exists on main.
         verify:
-          - git cat-file -e 4b3c94cdcfa441737ee47132636a3fac74981772
+          - git cat-file -e 4b3c94cdcfa441737ee47132636a3fac74981772 && git merge-base --is-ancestor 4b3c94cdcfa441737ee47132636a3fac74981772 origin/main
         delivery: repository
         blocker: null
         evidence:
           commit: 4b3c94cdcfa441737ee47132636a3fac74981772
           deployment: null
-          verified_at: "2026-08-27"
+          verified_at: "2026-10-09"
       - id: FW-R1.1a
         title: Baseline verification and stale-reference inventory (discovery)
         outcome: The result of the full test, build and audit run is recorded, and every reference to a superseded GitHub organisation name is listed.
